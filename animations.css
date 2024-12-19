@@ -1,0 +1,73 @@
+@keyframes zoomOut {
+    0% {
+        scale: 1.0;
+    }
+    100% {
+        scale: 1.5;
+    }
+}
+
+.zoomOutActive {
+    animation: zoomOut 2s ease-in-out forwards;
+}
+
+@keyframes changeColor {
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: rgb(214, 21, 134);
+    }
+}
+
+.changeColorActive {
+    animation: changeColor 2s forwards;
+}
+
+@keyframes changeDisplay {
+    100% {
+        opacity: 100;
+    }
+}
+
+.changeDisplayActive {
+    animation: changeDisplay 2s forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotateActive {
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes changeColorInfinity {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    20% {
+        color: rgb(251, 255, 0);
+    }
+    40% {
+        color: rgb(16, 255, 48);
+    }
+    60% {
+        color: rgb(0, 17, 255);
+    }
+    80% {
+        color: rgb(140, 0, 255);
+    }
+    100% {
+        color: rgb(255, 0, 0);
+    }
+}
+
+.changeColorInfinityActive {
+    animation: changeColorInfinity 5s linear infinite;
+}
